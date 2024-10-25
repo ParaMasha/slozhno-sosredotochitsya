@@ -10,3 +10,15 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root .theme_dark {
+  --background-image: url(./images/cover-image-dark.png);
+  --background-color: #000028;
+  --main-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --main-text-size: 18px;
+  --main-text-weight: normal;
+  --main-title-size: 9.813em;
+  --main-title-weight: bold;
+  --objects-display: block;
+}

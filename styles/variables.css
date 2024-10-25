@@ -2,3 +2,14 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #ff0070;
+  --main-text-size: 18px;
+  --main-text-weight: normal;
+  --main-title-size: 9.813em;
+  --main-title-weight: bold;
+  --main-title-color: #DB00FF;
+  --background-color: #000028;
+  --objects-display: block;
+}
