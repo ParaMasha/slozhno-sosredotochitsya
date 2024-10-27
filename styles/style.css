@@ -1,35 +1,110 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   position: relative;
-  margin-left: -20px;
+  font-family: var(--page-font-family, "IBM Plex mono", sans-serif);
+  font-size: var(--main-text-size, 18px);
+  font-weight: var(--main-text-weight, normal);
+
 }
 
 .header {
   position: relative;
-  block-size: 100vh;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
+  padding: var(--header-padding);
+  background-image: var(--header-background-image, url("../images/cover-image-dark.png"));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  grid-auto-flow: row dense;
+  height: 100vh;
+}
+
+.rec {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  top: var(--header-padding);
+  line-height: 1.563em;
+  right: calc(var(--header-padding) + 8px);
+}
+
+.rec::before {
+  content: "REC";
+  position: relative;
+  font-size: var(--main-text-size);
+  color: var(--accent-color);
+}
+
+.rec::after {
+  content: "";
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.header::before, .header::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  z-index: 10;
+}
+
+.header::before {
+  top: var(--header-padding);
+  right: var(--header-padding);
+  border-top: 1px var(--accent-color) solid;
+  border-right: 1px var(--accent-color) solid;
+}
+
+.header::after {
+  bottom: var(--header-padding);
+  left: var(--header-padding);
+  border-bottom: 1px var(--accent-color) solid;
+  border-left: 1px var(--accent-color) solid;
 }
 
 .header__theme-menu {
-  display: grid;
-  grid-column: span 3;
-  gap: 20px;
 }
 
 .header__theme-menu-list {
+  gap: 0.625em;
   display: flex;
   justify-content: center;
-  gap: 0.625em;
+}
+
+@media screen and (max-width: 768px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .header__theme-menu {
+    align-self: center;
+  }
 }
 
 .header__theme-menu-button {
-  padding: 0 13px 13px;
+  padding: 0 13px 3px;
   text-transform: lowercase;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
   font-size: var(--main-text-size);
   font-weight: var(--main-text-weight);
   width: 70px;
@@ -37,12 +112,11 @@
   border: none;
   background-color: transparent;
   color: var(--accent-color);
+  justify-self: center;
 }
 
 .main__heading {
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
+  margin-top: clamp();
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: bold;
   font-size: var(--main-title-size);
@@ -51,8 +125,55 @@
   align-items: center;
   color: var(--main-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
+  text-transform: lowercase;
+  line-height: 129.53px;
+  margin-left: calc(var(--header-padding) * -1);
 }
 
-h1 {
-  grid-column: span 3;
+.paragraph_title {
+  color: var(--main-text-color);
+  line-height: 1.463em;
+  font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
+  font-size: var(--main-text-size);
+  background-color: var(--accent-color);
+}
+
+.header__description {
+  margin-block-start: clamp(3.438, 7.125em, 10.125em);
+  align-self: center;
+  line-height: 2.3rem;
+}
+
+.rec {
+  position: absolute;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid {
+  display: grid;
+}
+
+main {
+  display: grid;
+  margin: 60px var(--header-padding);
+  gap: 80px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--header-padding);
+}
+
+section .paragraph_title {
+  margin-bottom: 10px;
+}
+
+.section--type-one .wide{
+  grid-column-start: 2;
+  grid-column-end: 4;
 }

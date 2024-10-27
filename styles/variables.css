@@ -7,9 +7,12 @@
   --accent-color: #ff0070;
   --main-text-size: 18px;
   --main-text-weight: normal;
-  --main-title-size: 9.813em;
+  --main-text-color: #000028;
+  --main-title-size: 15.7rem;
   --main-title-weight: bold;
   --main-title-color: #DB00FF;
   --background-color: #000028;
-  --objects-display: block;
+  --header-background-image: url(../images/cover-image-dark.png);
+  --page-font-family: 'IBM Plex mono';
+  --header-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
 }
