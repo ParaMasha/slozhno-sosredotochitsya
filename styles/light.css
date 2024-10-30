@@ -11,7 +11,15 @@
   */
 }
 
-:root {
+:root .theme_light{
   --accent-color: #ff8dcb;
   --header-background-image: url("../images/cover-image-light.png");
+  }
+
+  .theme_light .rec {
+    display: none;
+  }
+
+  .theme-auto .rec {
+    display: none;
   }

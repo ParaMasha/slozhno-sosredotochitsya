@@ -38,7 +38,7 @@ body {
   gap: 10px;
   top: var(--header-padding);
   line-height: 1.563em;
-  right: calc(var(--header-padding) + 8px);
+  right: calc(var(--header-padding) + 10px);
 }
 
 .rec::before {
@@ -113,10 +113,8 @@ body {
 }
 
 .main__heading {
-  margin-top: clamp();
   font-family: 'IBM Plex mono', sans-serif;
-  font-weight: bold;
-  font-size: var(--main-title-size);
+  font-size: 15.7rem;
   font-weight: var(--main-title-weight);
   justify-self: start;
   align-items: center;
@@ -134,7 +132,6 @@ body {
   font-size: var(--main-text-size);
   font-weight: var(--main-title-weight);
   background-color: var(--accent-color);
-  height: 23px;
 }
 
 .section-sub-title {
@@ -144,7 +141,7 @@ body {
 .header__description {
   margin-block-start: clamp(3.438, 7.125em, 10.125em);
   align-self: center;
-  line-height: 2.3rem;
+  line-height: var(--main-text-line-height);
 }
 
 .rec {
@@ -153,11 +150,12 @@ body {
 
 .description {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .description__text {
   display: grid;
+  grid-column: 2;
 }
 
 main {
@@ -189,8 +187,7 @@ section {
 
 .text {
   margin-bottom: 20px;
+  line-height: var(--main-text-line-height);
 }
 
-.section__unique .section__title {
-}
 

@@ -16,9 +16,11 @@
   --background-color: #000028;
   --main-title-color: #DB00FF;
   --accent-color: #ff0070;
-  --main-text-size: 18px;
+  --main-title-size: 15.7rem;
   --main-text-weight: normal;
   --main-title-size: 9.813em;
   --main-title-weight: bold;
   --objects-display: block;
 }
+
+
