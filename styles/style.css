@@ -21,7 +21,7 @@ body {
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  padding: var(--header-padding);
+  padding: var(--main-padding);
   background-image: var(--header-background-image, url("../images/cover-image-dark.png"));
   background-position: center;
   background-size: cover;
@@ -36,9 +36,9 @@ body {
   align-items: center;
   position: absolute;
   gap: 10px;
-  top: var(--header-padding);
+  top: var(--main-padding);
   line-height: 1.563em;
-  right: calc(var(--header-padding) + 10px);
+  right: calc(var(--main-padding) + 10px);
 }
 
 .rec::before {
@@ -67,15 +67,15 @@ body {
 }
 
 .header::before {
-  top: var(--header-padding);
-  right: var(--header-padding);
+  top: var(--main-padding);
+  right: var(--main-padding);
   border-top: 1px var(--accent-color) solid;
   border-inline-end: 1px var(--accent-color) solid;
 }
 
 .header::after {
-  bottom: var(--header-padding);
-  left: var(--header-padding);
+  bottom: var(--main-padding);
+  left: var(--main-padding);
   border-bottom: 1px var(--accent-color) solid;
   border-inline-start: 1px var(--accent-color) solid;
 }
@@ -122,7 +122,7 @@ body {
   text-shadow: 4px 4px 0 var(--accent-color);
   text-transform: lowercase;
   line-height: 129.53px;
-  margin-left: calc(var(--header-padding) * -1);
+  margin-left: calc(var(--main-padding) * -1);
 }
 
 .title-decor {
@@ -159,13 +159,12 @@ body {
 
 main {
   display: grid;
-  margin: 60px var(--header-padding);
-  gap: 80px;
+  margin: 60px var(--main-padding);
   margin-block-end: var(--section-margin-bottom);
 }
 
 .section {
-  gap: var(--header-padding);
+  gap: var(--main-padding);
 }
 
 .section__standard {
@@ -184,14 +183,12 @@ main {
 }
 
 .section__unique-details {
-  display: grid;
   grid-row: 2;
   gap: 20px;
 }
 
 .section__unique .section__unique-details {
   margin-block-end: 10px;
-  line-height: 0,01em;
 }
 
 .section__title {
@@ -201,7 +198,7 @@ main {
 
 .section__standard .title-decor {
   margin-block-end: 10px;
-  line-height: 0,01em;
+  line-height: var(--main-text-line-height);
 }
 
 .section__standard .section-details{
@@ -210,8 +207,46 @@ main {
 }
 
 .text {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   line-height: var(--main-text-line-height);
 }
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.sunset {
+  grid-area: sunset;
+}
+
+.ice-cream {
+  grid-area: ice-cream;
+}
+
+.books {
+  grid-area: books;
+}
+
+.tape {
+  grid-area: tape;
+}
+
+.street {
+  grid-area: street;
+}
+
+.galery {
+  display: grid;
+  grid-template-areas: 
+  "sunset sunset ice-cream"
+  "tape books ice-cream"
+  "tape street street";
+  gap: 20px;
+}
+
+
 
 

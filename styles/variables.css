@@ -13,7 +13,6 @@
   --background-color: #000028;
   --header-background-image: url(../images/cover-image-dark.png);
   --page-font-family: 'IBM Plex mono';
-  --header-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
-  --main-text-line-height: 2.3rem;
-  --section-margin-bottom: clamp(3.125rem, 5rem, 5rem);
+  --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
+  --main-text-line-height: 2.34rem;
 }
