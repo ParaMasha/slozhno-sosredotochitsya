@@ -8,6 +8,7 @@
   --main-text-size: 18px;
   --main-text-weight: normal;
   --main-text-color: #000028;
+  --text-color: #F1B2CE;
   --main-title-weight: bold;
   --main-title-color: #DB00FF;
   --background-color: #000028;
@@ -15,4 +16,6 @@
   --page-font-family: 'IBM Plex mono';
   --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
   --main-text-line-height: 2.34rem;
+  --link-color: #F1B2CE;
+
 }

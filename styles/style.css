@@ -112,6 +112,14 @@ body {
   justify-self: center;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .main__heading {
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 15.7rem;
@@ -209,6 +217,20 @@ main {
 .text {
   margin-block-end: 20px;
   line-height: var(--main-text-line-height);
+  color: var(--text-color);
+}
+
+.section-link {
+  text-shadow: 4px 3px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.section-link:hover {
+  border-bottom: 1px solid var(--link-color);
+}
+
+.section-link:focus-visible {
+  border: 1px solid var(--link-color);
 }
 
 .image {
@@ -232,6 +254,7 @@ main {
 
 .tape {
   grid-area: tape;
+  height: 100%;
 }
 
 .street {
