@@ -14,6 +14,16 @@
 :root .theme_light{
   --accent-color: #ff8dcb;
   --header-background-image: url("../images/cover-image-light.png");
+  --background-color: #FFF1F7;
+  --main-title-color: #FFC2E6;
+  --section-title-color: #353430;
+  --sub-title-color: #353430;
+  --main-text-weight: normal;
+  --main-title-size: 9.813em;
+  --main-title-weight: bold;
+  --objects-display: block;
+  --main-text-color: #353430;
+
   }
 
   .theme_light .rec {
@@ -23,3 +33,14 @@
   .theme-auto .rec {
     display: none;
   }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--accent-color);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+

@@ -108,16 +108,8 @@ body {
   height: 26px;
   border: none;
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--section-title-color);
   justify-self: center;
-}
-
-.header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .main__heading {
@@ -134,7 +126,7 @@ body {
 }
 
 .title-decor {
-  color: var(--main-text-color);
+  color: var(--sub-title-color);
   line-height: 1.463em;
   font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
   font-size: var(--main-text-size);
@@ -200,7 +192,7 @@ main {
 }
 
 .section__title {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-size: var(--main-text-size);
 }
 
@@ -217,7 +209,7 @@ main {
 .text {
   margin-block-end: 20px;
   line-height: var(--main-text-line-height);
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 .section-link {
@@ -238,6 +230,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
 }
 
 .sunset {
@@ -254,7 +247,6 @@ main {
 
 .tape {
   grid-area: tape;
-  height: 100%;
 }
 
 .street {
@@ -268,6 +260,8 @@ main {
   "tape books ice-cream"
   "tape street street";
   gap: 20px;
+  width: 100%;
+  height: 100vh;
 }
 
 
