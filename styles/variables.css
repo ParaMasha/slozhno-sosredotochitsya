@@ -15,7 +15,7 @@
   --header-background-image: url(../images/cover-image-dark.png);
   --page-font-family: 'IBM Plex mono';
   --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
-  --section-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem)
+  --section-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
   --main-text-line-height: 2.34rem;
   --link-color: #F1B2CE;
 

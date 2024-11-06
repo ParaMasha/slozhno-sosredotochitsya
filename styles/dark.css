@@ -23,6 +23,7 @@
   --main-title-size: 9.813em;
   --main-title-weight: bold;
   --objects-display: block;
+  --button-border-color: #ff0070;
 }
 
 :root .theme_auto {
@@ -37,6 +38,7 @@
   --main-title-size: 9.813em;
   --main-title-weight: bold;
   --objects-display: block;
+  --button-border-color: #ff0070;
 }
 
 

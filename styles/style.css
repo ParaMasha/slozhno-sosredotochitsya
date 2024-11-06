@@ -24,6 +24,7 @@ body {
   padding: var(--main-padding);
   background-image: var(--header-background-image, url("../images/cover-image-dark.png"));
   background-position: center;
+  background-color: var(--background-color);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -58,7 +59,7 @@ body {
   box-shadow: 0px 0px 4px 2px #FF0070;
 }
 
-.header::before, .header::after {
+.decorated-zone::before, .decorated-zone::after {
   content: "";
   position: absolute;
   height: 25px;
@@ -66,14 +67,14 @@ body {
   z-index: 10;
 }
 
-.header::before {
+.decorated-zone::before {
   top: var(--main-padding);
   right: var(--main-padding);
   border-top: 1px var(--accent-color) solid;
   border-inline-end: 1px var(--accent-color) solid;
 }
 
-.header::after {
+.decorated-zone::after {
   bottom: var(--main-padding);
   left: var(--main-padding);
   border-bottom: 1px var(--accent-color) solid;
@@ -112,6 +113,15 @@ body {
   justify-self: center;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-border-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--button-border-color);
+}
+
 .main__heading {
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 15.7rem;
@@ -136,6 +146,7 @@ body {
 
 .section-sub-title {
   font-weight: var(--main-text-weight);
+  margin-block-start: 20px;
 }
 
 .header__description {
@@ -175,6 +186,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1fr;
+  margin-top: 62px;
+  margin-bottom: 48.1px;
 }
 
 .section__title-unique {
@@ -269,6 +282,11 @@ main {
   gap: 20px;
   width: 100%;
   height: 100vh;
+  margin-block-start: 80px;
+}
+
+.footer {
+  min-height: 100vh;
 }
 
 
