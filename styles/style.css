@@ -160,7 +160,6 @@ body {
 main {
   display: grid;
   margin: 60px var(--main-padding);
-  margin-block-end: var(--section-margin-bottom);
 }
 
 .section {
@@ -196,7 +195,7 @@ main {
   font-size: var(--main-text-size);
 }
 
-.section__standard .title-decor {
+.title-decor {
   margin-block-end: 10px;
   line-height: var(--main-text-line-height);
 }
@@ -239,6 +238,10 @@ main {
 
 .ice-cream {
   grid-area: ice-cream;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .books {
@@ -247,6 +250,10 @@ main {
 
 .tape {
   grid-area: tape;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .street {

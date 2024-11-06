@@ -25,6 +25,20 @@
   --objects-display: block;
 }
 
+:root .theme_auto {
+  --header-background-image: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --main-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --section-title-color: #ff0070;
+  --main-text-weight: normal;
+  --sub-title-color: #000028;
+  --main-text-color: #F1B2CE;
+  --main-title-size: 9.813em;
+  --main-title-weight: bold;
+  --objects-display: block;
+}
+
 
 
 
