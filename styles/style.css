@@ -75,7 +75,7 @@ body {
 }
 
 .decorated-zone::after {
-  bottom: var(--main-padding);
+  bottom: calc(var(--main-padding) + 2.5px);
   left: var(--main-padding);
   border-bottom: 1px var(--angle-color) solid;
   border-inline-start: 1px var(--angle-color) solid;
@@ -114,8 +114,11 @@ body {
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--bottom-border-color);
-  pointer-events: none;
+  border: 1px solid var(--bottom-border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:hover {
@@ -156,7 +159,7 @@ body {
 
 .header__description {
   align-self: center;
-  line-height: calc(var(--main-text-line-height) * 1.5);
+  line-height: var(--main-text-line-height);
 }
 
 .rec {
@@ -306,7 +309,7 @@ main {
   grid-row: 2;
   justify-self: center;
   margin: var(--main-padding);
-  text-shadow: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 
