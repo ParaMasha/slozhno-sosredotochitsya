@@ -5,6 +5,7 @@
 
 :root {
   --accent-color: #ff0070;
+  --heading-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --main-text-size: 18px;
   --main-text-weight: normal;
   --main-text-color: #000028;
@@ -15,7 +16,6 @@
   --header-background-image: url(../images/cover-image-dark.png);
   --page-font-family: 'IBM Plex mono';
   --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
-  --section-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
   --main-text-line-height: 2.34rem;
   --link-color: #F1B2CE;
 
