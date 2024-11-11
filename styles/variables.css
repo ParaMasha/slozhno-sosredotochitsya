@@ -18,5 +18,5 @@
   --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
   --main-text-line-height: 2.34rem;
   --link-color: #F1B2CE;
-
+  --text-unique-margin-bottom: -2px;
 }

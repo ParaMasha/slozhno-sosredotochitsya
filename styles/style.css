@@ -358,13 +358,25 @@ main {
   .section__title-unique {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-block-end: 6px;
     }
 
   .section__unique {
     display: flex;
     flex-direction: column;
+    margin-block-end: 71px;
   }
-}
 
+  .section__unique .section__unique-details {
+      margin-block-end: 10px;
+      padding-inline-start: 5px;
+      padding-inline-end: 5px;
+    }
 
+  .text__unique {
+    margin-block-end: var(--text-unique-margin-bottom);
+  }
 
+  .text {
+    padding-inline-start: 2px;
+  }
