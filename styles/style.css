@@ -350,7 +350,7 @@ main {
   }
 
   .section__standard .section-details {
-    padding-inline-start: 8px;
+    padding-inline-start: 10px;
     word-spacing: 0px;
     padding-inline-end: 5px;
   }
@@ -371,6 +371,7 @@ main {
       margin-block-end: 10px;
       padding-inline-start: 5px;
       padding-inline-end: 5px;
+
     }
 
   .text__unique {
@@ -380,3 +381,8 @@ main {
   .text {
     padding-inline-start: 2px;
   }
+
+  .section-gallery {
+    margin-block-start: 45px;
+  }
+}
