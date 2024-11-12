@@ -275,7 +275,7 @@ main {
   grid-area: street;
 }
 
-.galery {
+.gallery {
   display: grid;
   grid-template-areas: 
   "sunset sunset ice-cream"
@@ -376,6 +376,7 @@ main {
 
   .text__unique {
     margin-block-end: var(--text-unique-margin-bottom);
+    line-height: var(--main-text-line-height);
   }
 
   .text {
@@ -384,5 +385,7 @@ main {
 
   .section-gallery {
     margin-block-start: 45px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
   }
 }
