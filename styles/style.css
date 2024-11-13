@@ -478,12 +478,14 @@ main {
   .gallery {
     margin-block-start: 10px;
     gap: 10px;
-    margin-block-end: -10px;
+    margin-block-end: -20px;
   }
   
   .books {
-    order: 1;
+    order: 2;
   }
 
-
+  .street {
+    order: 5;
+  }
 }
