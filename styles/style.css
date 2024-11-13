@@ -441,10 +441,6 @@ main {
     padding: 0;
   }
 
-  .section {
-
-  }
-
   .section__title {
     padding: 0;
   }
@@ -465,5 +461,29 @@ main {
     padding: 0;
     margin-block-start: 3px;
   }
+
+  .section__unique {
+    margin-block-end: 40px;
+  }
+
+  .section-sub-title {
+    margin-block-end: 11px;
+  }
+
+  .section-gallery {
+    padding: 0;
+    margin-block-start: 27px;
+  }
+
+  .gallery {
+    margin-block-start: 10px;
+    gap: 10px;
+    margin-block-end: -10px;
+  }
+  
+  .books {
+    order: 1;
+  }
+
 
 }
