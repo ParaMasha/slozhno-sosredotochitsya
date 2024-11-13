@@ -135,7 +135,6 @@ body {
 
 .title-decor {
   color: var(--sub-title-color);
-  line-height: 1.463em;
   font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
   font-size: var(--main-text-size);
   font-weight: var(--main-title-weight);
@@ -143,7 +142,6 @@ body {
   line-height: var(--main-text-line-height);
   margin-block-end: 10px;
 }
-
 
 .section-sub-title {
   font-weight: var(--main-text-weight);
@@ -170,7 +168,7 @@ body {
   grid-column: 2;
 }
 
-main {
+.main {
   display: grid;
   margin: 60px var(--main-padding);
 }
@@ -210,7 +208,7 @@ main {
   font-size: var(--main-text-size);
 }
 
-.section__standard .section-details{
+.section__standard .section-details {
   grid-column-start: 2;
   grid-column-end: 4;
   margin-block-end: 20px;
@@ -426,7 +424,7 @@ main {
     grid-column: span 2;
   }
 
-  .section__standard{
+  .section__standard {
     display: flex;
     flex-direction: column;
   }
