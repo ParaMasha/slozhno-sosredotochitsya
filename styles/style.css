@@ -16,6 +16,7 @@ body {
   font-size: var(--main-text-size, 18px);
   font-weight: var(--main-text-weight, normal);
   margin: auto;
+  background-attachment: fixed;
 }
 
 .header {
@@ -152,10 +153,6 @@ body {
   align-self: center;
   line-height: var(--main-text-line-height);
   margin-block-end: 1px;
-}
-
-.rec {
-  position: absolute;
 }
 
 .description {
@@ -432,6 +429,9 @@ body {
   .gallery {
     display: flex;
     flex-direction: column;
+    margin-block-start: 10px;
+    gap: 10px;
+    margin-block-end: -20px;
   }
 
   main {
@@ -471,12 +471,6 @@ body {
   .section-gallery {
     padding: 0;
     margin-block-start: 27px;
-  }
-
-  .gallery {
-    margin-block-start: 10px;
-    gap: 10px;
-    margin-block-end: -20px;
   }
   
   .books {
