@@ -35,9 +35,10 @@
   --text-unique-margin-bottom: -2px;
 }
 
-.page.a {
-  display: none;
+.page {
+  display: auto;
 }
+
 
 
 
