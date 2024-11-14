@@ -34,7 +34,6 @@ body {
   height: 100vh;
   min-height: 668px;
   margin-block-end: 60px;
-  padding: var(--main-padding);
 }
 
 .rec {
@@ -436,6 +435,7 @@ body {
     margin-block-start: 10px;
     gap: 10px;
     margin-block-end: -20px;
+    gap: 11px;
   }
 
   main {
@@ -480,10 +480,6 @@ body {
     padding: 0;
     margin-block-start: 27px;
     margin-block-end: 62px;
-  }
-
-  .gallery {
-    gap: 11px;
   }
   
   .books {
