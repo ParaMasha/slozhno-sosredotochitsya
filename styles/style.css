@@ -387,7 +387,7 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (width: 375px) {
   .rec {
     top: calc(var(--main-padding) + -1px);
     right: calc(var(--main-padding) + 10px);
