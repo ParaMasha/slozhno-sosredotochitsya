@@ -44,10 +44,6 @@
     }
   }
 
-  .theme_light .rec {
-    display: none;
-  }
-
   .header__theme-menu-button:hover {
     border: 1px solid var(--button-border-color);
   }
@@ -55,6 +51,10 @@
   .header__theme-menu-button:focus-visible {
     outline: none;
     border-bottom: 1px solid var(--button-border-color);
+  }
+
+  .theme_light .rec {
+    display: none;
   }
   
 
