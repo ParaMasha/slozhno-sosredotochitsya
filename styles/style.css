@@ -439,8 +439,12 @@ body {
   }
 
   main {
-    margin-block-start: 40px;
+    margin-block-start: -20px;
     padding: 0;
+  }
+
+  .text {
+    padding-inline-start: 0;
   }
 
   .section__title {
@@ -475,6 +479,11 @@ body {
   .section-gallery {
     padding: 0;
     margin-block-start: 27px;
+    margin-block-end: 62px;
+  }
+
+  .gallery {
+    gap: 11px;
   }
   
   .books {
@@ -484,4 +493,5 @@ body {
   .street {
     order: 5;
   }
+
 }
