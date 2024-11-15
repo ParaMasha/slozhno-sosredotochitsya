@@ -444,6 +444,8 @@ body {
 
   .text {
     padding-inline-start: 0;
+    padding-block-start: 1.5px;
+    padding-block-end: 1px;
   }
 
   .section__title {
@@ -459,17 +461,16 @@ body {
   .section__title-unique {
     display: grid;
     grid-template-columns: 1fr;
-    margin-block-start: -7px;
+    margin-block-start: -12px;
+    margin-block-end: 10px;
   }
 
   .section__unique .section__unique-details {
     padding: 0;
-    margin-block-start: 3px;
   }
 
   .section__unique {
-    margin-block-end: 42px;
-  }
+    margin-block-end: 40px;
   }
 
   .section-sub-title {
@@ -478,7 +479,7 @@ body {
 
   .section-gallery {
     padding: 0;
-    margin-block-start: 29px;
+    margin-block-start: 22px;
     margin-block-end: 62px;
   }
 
@@ -489,5 +490,4 @@ body {
   .street {
     order: 5;
   }
-
 }
