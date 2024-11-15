@@ -468,11 +468,12 @@ body {
   }
 
   .section__unique {
-    margin-block-end: 40px;
+    margin-block-end: 42px;
+  }
   }
 
   .section-sub-title {
-    margin-block-end: 10.4px;
+    margin-block-start: 19px;
   }
 
   .section-gallery {
