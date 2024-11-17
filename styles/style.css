@@ -107,16 +107,17 @@ body {
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--bottom-border-color);
+  border: 1px solid var(--button-border-color);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
   cursor: pointer;
+  border: 1px solid var(--button-border-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--button-border-color);
+  border: 1px solid rgba(var(--button-border-color), 0.5);
   cursor: pointer;
 }
 
@@ -190,7 +191,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1fr;
   margin-block-start: 40px;
-  margin-block-end: 51px;
+  margin-block-end: 61px;
 }
 
 .section__title-unique {
@@ -233,8 +234,14 @@ body {
   cursor: pointer;
 }
 
+.section-link:focus {
+  border: 1px solid var(--link-color);
+  outline: none;
+} 
+
 .section-link:focus-visible {
   border: 1px solid var(--link-color);
+  outline: none;
 }
 
 .section-gallery {
@@ -285,7 +292,7 @@ body {
   "tape books ice-cream"
   "tape street street";
   gap: 20px;
-  width: 100%;
+  max-width: 100%;
   margin-block-start: 19px;
 }
 

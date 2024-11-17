@@ -25,6 +25,8 @@
   --objects-display: block;
   --main-text-color: #353430;
   --button-border-color: #353430;
+  --link-color: #FF8DCB;
+  ;
   }
 
   @media (prefers-color-scheme: light) {
@@ -41,6 +43,7 @@
       --objects-display: block;
       --main-text-color: #353430;
       --button-border-color: #353430;
+      --link-color: #FF8DCB;
     }
   }
 
@@ -54,7 +57,7 @@
   }
 
   .theme_light .rec {
-    display: none;
+    display: none; !important;
   }
   
 
