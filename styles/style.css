@@ -12,7 +12,7 @@ body {
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   position: relative;
-  font-family: var(--page-font-family, "IBM Plex mono", sans-serif);
+  font-family: var(--page-font-family, "IBM Plex mono", monospace);
   font-size: var(--main-text-size, 18px);
   font-weight: var(--main-text-weight, normal);
   margin: auto;
@@ -33,7 +33,7 @@ body {
   grid-auto-flow: row dense;
   height: 100vh;
   min-height: 668px;
-  margin-block-end: 60px;
+  margin-block-end: 3.40em;
 }
 
 .rec {
@@ -56,6 +56,7 @@ body {
 .rec::after {
   content: "";
   position: relative;
+  display: block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -152,13 +153,13 @@ body {
 
 .section-sub-title {
   font-weight: var(--main-text-weight);
-  margin-block-start: 20px;
+  margin-block-start: 1.25em;
 }
 
 .header__description {
   align-self: center;
   line-height: var(--main-text-line-height);
-  margin-block-end: 1px;
+  margin-block-end: 0.063em;
 }
 
 .description {
@@ -173,12 +174,12 @@ body {
 
 .main {
   display: grid;
-  margin: 60px var(--main-padding);
+  margin: 3.75em var(--main-padding);
 }
 
 .section {
   gap: var(--main-padding);
-  margin: calc(var(--main-padding) + 1px);
+  margin: calc(var(--main-padding) + 0.063em);
 }
 
 .section__standard {
@@ -190,21 +191,24 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1fr;
-  margin-block-start: 40px;
-  margin-block-end: 61px;
+  margin-block-start: 2.1em;
+  margin-block-end: 2.8em;
+  gap: calc(var(--main-padding) + 0.07em);
 }
 
 .section__title-unique {
   grid-row: 1;
+  grid-column: 1 / 4;
+  inline-size: 100%;
 }
 
 .section__unique-details {
   grid-row: 2;
-  gap: 20px;
+  gap: 1.5em;
 }
 
 .section__unique .section__unique-details {
-  margin-block-end: 10px;
+  margin-block-end: 0.625em;
 }
 
 .section__title {
@@ -216,6 +220,10 @@ body {
   grid-column-start: 2;
   grid-column-end: 4;
   margin-block-end: 20px;
+}
+
+.section__advise .section-sub-title {
+  margin-block-start: 20px;
 }
 
 .text {
@@ -293,7 +301,7 @@ body {
   "tape street street";
   gap: 20px;
   max-width: 100%;
-  margin-block-start: 19px;
+  margin-block-start: 0.9em;
 }
 
 .footer {

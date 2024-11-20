@@ -26,7 +26,20 @@
   --main-text-color: #353430;
   --button-border-color: #353430;
   --link-color: #FF8DCB;
-  ;
+  }
+
+  .theme_light .rec {
+    display: none; 
+  }
+
+  .theme_light .header__theme-menu-button:hover {
+    outline: none;
+    border: 1px solid var(--button-border-color);
+  }
+  
+  .theme_light .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: 1px solid var(--button-border-color);
   }
 
   @media (prefers-color-scheme: light) {
@@ -47,17 +60,18 @@
     }
   }
 
+  .rec {
+    display: none; 
+  }
+
   .header__theme-menu-button:hover {
+    outline: none;
     border: 1px solid var(--button-border-color);
   }
   
   .header__theme-menu-button:focus-visible {
     outline: none;
     border-bottom: 1px solid var(--button-border-color);
-  }
-
-  .theme_light .rec {
-    display: none; !important;
   }
   
 

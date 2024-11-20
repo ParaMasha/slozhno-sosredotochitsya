@@ -39,6 +39,13 @@
   display: auto;
 }
 
+.theme_dark .rec {
+  display: flex;
+}
+
+
+
+
 
 
 
