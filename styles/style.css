@@ -1,9 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-html {
-  font-size: 10px;
-}
-
 body {
   background-color: var(--background-color);
 
@@ -43,7 +38,7 @@ body {
   gap: 10px;
   top: var(--main-padding);
   line-height: 1.563em;
-  right: calc(var(--main-padding) + 11px);
+  right: calc(var(--main-padding) + 10px);
 }
 
 .rec::before {
@@ -87,7 +82,7 @@ body {
 }
 
 .header__theme-menu-list {
-  gap: 0.625em;
+  gap: 0.618em;
   display: flex;
   justify-content: center;
 }
@@ -129,7 +124,7 @@ body {
 
 .main__heading {
   font-family: 'IBM Plex mono', sans-serif;
-  font-size: 15.7rem;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--main-title-weight);
   justify-self: start;
   align-items: center;
@@ -191,7 +186,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1fr;
   margin-block-start: 2.1em;
-  margin-block-end: 2.8em;
+  margin-block-end: 2.722em;
   gap: calc(var(--main-padding) + 0.07em);
 }
 
@@ -199,6 +194,7 @@ body {
   grid-row: 1;
   grid-column: 1 / 4;
   inline-size: 100%;
+  row-gap: 2.778em;
 }
 
 .section__unique-details {
@@ -229,6 +225,7 @@ body {
   margin-block-end: 20px;
   line-height: var(--main-text-line-height);
   color: var(--main-text-color);
+  margin-right: -1px;
 }
 
 .section-link {
@@ -253,8 +250,8 @@ body {
 }
 
 .section-gallery {
-  margin-block-start: 41px;
-  margin-block-end: 60px;
+  margin-block-start: 2.167em;
+  margin-block-end: 3.611em;
 }
 
 .image {
@@ -301,7 +298,7 @@ body {
   "tape street street";
   gap: 20px;
   max-width: 100%;
-  margin-block-start: 0.9em;
+  margin-block-start: 1em;
 }
 
 .footer {
@@ -429,7 +426,7 @@ body {
   .main__heading {
     margin-left: 0;
     line-height: 95.7px;
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .description {
