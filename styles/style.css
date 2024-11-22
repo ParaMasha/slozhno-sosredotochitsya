@@ -109,22 +109,20 @@ body {
 
 .header__theme-menu-button_active {
   border: 1px solid var(--button-border-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
   cursor: pointer;
   border: 1px solid var(--button-border-color);
 }
 
 .header__theme-menu-button:hover {
-  outline: none;
-  border: 1px solid var(--button-border-color);
+  border: 1px solid var(--hover-color);
   cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-bottom: 1px solid var(--button-border-color);
   cursor: pointer;
 }
@@ -241,6 +239,7 @@ body {
 .section-link:hover {
   border-bottom: 1px solid var(--link-color);
   cursor: pointer;
+  outline: none;
 }
 
 .section-link:focus {
