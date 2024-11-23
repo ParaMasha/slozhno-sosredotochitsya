@@ -24,6 +24,6 @@
   --main-padding: clamp(1rem, 0.2639rem + 1.5408vw, 2rem);
   --main-text-line-height: 1.3em;
   --link-color: #F1B2CE;
-  --text-unique-margin-bottom: -2px;
+  --text-unique-margin-bottom: -5px;
   --hover-color: rgba(255, 0, 112, 0.4);
 }

@@ -27,6 +27,7 @@
   --button-border-color: #353430;
   --link-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.4);
+  --text-unique-margin-bottom: -5px;
   }
 
   .theme_light .rec {
@@ -71,6 +72,7 @@
       --button-border-color: #353430;
       --link-color: #353430;
       --hover-color: rgba(50, 49, 45, 0.4);
+      --text-unique-margin-bottom: -5px;
     }
 
     .rec {

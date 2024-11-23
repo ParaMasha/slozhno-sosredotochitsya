@@ -322,7 +322,7 @@ body {
 
   .rec {
     top: calc(var(--main-padding) + 4px);
-    right: calc(var(--main-padding) + 15px);
+    right: calc(var(--main-padding) + 13px);
   }
 
   .decorated-zone::before {
@@ -339,8 +339,9 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    padding-inline-end: 5px;
-    line-height: calc(var(--main-text-line-height) + 2px);
+    padding-inline-end: 0.313em;
+    line-height: var(--main-text-line-height);
+    margin-block-start: 0.219em;
   }
 
   .header__theme-menu {
@@ -354,12 +355,12 @@ body {
   }
 
   .header__description {
-    margin-inline-end: 5px;
-    line-height: calc(var(--main-text-line-height) + 0.5px);
+    margin-inline-end: 0.313em;
+    line-height: calc(var(--main-text-line-height) + 0.013em);
   }
 
   .section__title {
-    padding-inline-start: 5px;
+    padding-inline-start: 0.188em;
   }
 
   .title-decor {
@@ -368,37 +369,41 @@ body {
 
   .section__standard .section-details {
     padding-inline-start: 10px;
-    word-spacing: 0;
     padding-inline-end: 5px;
+  }
+
+  .text {
+    margin-block-end: 20px;
   }
 
   .section__title-unique {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-block-end: 6px;
+    margin-block-end: 0.188em;
+    margin-block-start: 0.063em;
     }
 
   .section__unique {
     display: flex;
     flex-direction: column;
-    margin-block-end: 71px;
+    margin-block-end: 4.1em;
   }
 
   .section__unique .section__unique-details {
     margin-block-end: 10px;
-    padding-inline-start: 5px;
-    padding-inline-end: 5px;
+    padding-inline-start: 0.25em;
+    padding-inline-end: 0.25em;
     }
 
   .text__unique {
     margin-block-end: var(--text-unique-margin-bottom);
-    line-height: var(--main-text-line-height);
+    line-height: calc(var(--main-text-line-height) * 1px);
   }
 
   .section-gallery {
-    margin-block-start: 45px;
-    padding-inline-start: 5px;
-    padding-inline-end: 5px;
+    margin-block-start: 44px;
+    padding-inline-start: 0.25em;
+    padding-inline-end: 0.25em;
   }
 }
 
