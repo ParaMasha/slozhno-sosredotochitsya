@@ -1,4 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+* { outline: 1px solid цвет; }
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -8,7 +9,10 @@
   font-weight: var(--main-text-weight, normal);
   margin: auto;
   background-attachment: fixed;
-  background-image: var(--header-background-image, url("../images/cover-image-dark.png"));
+  background-image: var(
+    --header-background-image,
+    url("../images/cover-image-dark.png")
+  );
   background-position: center;
   background-color: var(--background-color);
   background-size: cover;
@@ -24,7 +28,7 @@
   grid-auto-flow: row dense;
   height: 100vh;
   min-height: 668px;
-  margin-block-end: 3.40em;
+  margin-block-end: 3.4em;
 }
 
 .rec {
@@ -52,10 +56,11 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
 }
 
-.decorated-zone::before, .decorated-zone::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   height: 25px;
@@ -86,7 +91,7 @@
 .header__theme-menu-button {
   padding: 0 13px 3px;
   text-transform: lowercase;
-  font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
+  font-family: var(--page-font-family, "IBM Plex mono"), sans-serif;
   font-size: var(--main-text-size);
   font-weight: var(--main-text-weight);
   width: 70px;
@@ -101,25 +106,27 @@
 .header__theme-menu-button_active {
   border: 1px solid var(--button-border-color);
   pointer-events: none;
+  outline: none;
 }
 
 .header__theme-menu-button:focus {
-  cursor: pointer;
-  border: 1px solid currentColor;
+  outline: none;
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--hover-color);
   cursor: pointer;
+  outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
+  outline: none;
   cursor: pointer;
 }
 
 .main__heading {
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: "IBM Plex mono", sans-serif;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--main-title-weight);
   justify-self: start;
@@ -133,7 +140,7 @@
 
 .title-decor {
   color: var(--sub-title-color);
-  font-family: var(--page-font-family, 'IBM Plex mono'), sans-serif;
+  font-family: var(--page-font-family, "IBM Plex mono"), sans-serif;
   font-size: var(--main-text-size);
   font-weight: var(--main-title-weight);
   background-color: var(--accent-color);
@@ -180,7 +187,6 @@
 .section__unique {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: auto 1fr;
   margin-block-start: 2.1em;
   margin-block-end: 2.722em;
   gap: calc(var(--main-padding) + 0.07em);
@@ -238,7 +244,7 @@
 .section-link:focus {
   border: 1px solid currentColor;
   outline: none;
-} 
+}
 
 .section-link:focus-visible {
   border: 1px solid currentColor;
@@ -256,10 +262,10 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  inline-size: 100%; 
-  block-size: 100%; 
-  object-fit: cover; 
-  object-position: center; 
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sunset {
@@ -288,10 +294,10 @@
 
 .gallery {
   display: grid;
-  grid-template-areas: 
-  "sunset sunset ice-cream"
-  "tape books ice-cream"
-  "tape street street";
+  grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
   gap: 20px;
   max-width: 100%;
   margin-block-start: 1em;
@@ -315,7 +321,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .rec {
     top: calc(var(--main-padding) + 4px);
     right: calc(var(--main-padding) + 13px);
@@ -377,7 +382,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin-block-end: 0.188em;
     margin-block-start: 0.063em;
-    }
+  }
 
   .section__unique {
     display: flex;
@@ -389,7 +394,7 @@
     margin-block-end: 10px;
     padding-inline-start: 0.25em;
     padding-inline-end: 0.25em;
-    }
+  }
 
   .text__unique {
     margin-block-end: var(--text-unique-margin-bottom);
@@ -403,8 +408,14 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
+  .section__standard {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media screen and (max-width: 375px) {
   .header {
     padding: calc(var(--main-padding) - 5px);
   }
@@ -439,7 +450,7 @@
   }
 
   .description {
-    margin-inline-end: calc(var(--main-padding)* -0.5);
+    margin-inline-end: calc(var(--main-padding) * -0.5);
     margin-block-start: 8px;
   }
 

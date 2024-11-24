@@ -14,13 +14,13 @@
 :root .theme_dark {
   --header-background-image: url("../images/cover-image-dark.png");
   --background-color: #000028;
-  --main-title-color: #DB00FF;
+  --main-title-color: #db00ff;
   --accent-color: #ff0070;
   --section-title-color: #ff0070;
   --angle-color: #ff0070;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --sub-title-color: #000028;
-  --main-text-color: #F1B2CE;
+  --main-text-color: #f1b2ce;
   --main-title-size: 9.813em;
   --objects-display: block;
   --button-border-color: #ff0070;
@@ -33,14 +33,3 @@
 .theme_dark .rec {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
