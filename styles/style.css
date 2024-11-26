@@ -1,6 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-* { outline: 1px solid цвет; }
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   position: relative;
@@ -220,6 +218,9 @@
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-block-end: 20px;
   line-height: var(--main-text-line-height);
   color: var(--main-text-color);
