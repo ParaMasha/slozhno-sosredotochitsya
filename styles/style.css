@@ -348,7 +348,6 @@
   .main__heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 100px;
-    word-spacing: -21px;
   }
 
   .header__description {
@@ -370,7 +369,7 @@
   }
 
   .text {
-    margin-block-end: 20px;
+    margin-block-end: 1.2em;
   }
 
   .section__title-unique {
@@ -384,6 +383,7 @@
     display: flex;
     flex-direction: column;
     margin-block-end: 4.1em;
+    gap: var(--main-padding);
   }
 
   .section__unique .section__unique-details {
@@ -398,7 +398,7 @@
   }
 
   .section-gallery {
-    margin-block-start: 44px;
+    margin-block-start: 2.1em;
     padding-inline-start: 0.25em;
     padding-inline-end: 0.25em;
   }
