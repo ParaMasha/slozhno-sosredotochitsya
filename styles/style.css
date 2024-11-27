@@ -416,7 +416,7 @@
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 380px) {
   .header {
     padding: calc(var(--main-padding) - 5px);
     margin-block-end: 2.1em;
