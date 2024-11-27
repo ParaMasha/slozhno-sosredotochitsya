@@ -187,7 +187,7 @@
 
 .section__unique {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   margin-block-start: 3.4em;
   margin-block-end: 4.3em;
   gap: calc(var(--main-padding) + 0.07em);
