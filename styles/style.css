@@ -94,7 +94,7 @@
   font-weight: var(--main-text-weight);
   width: 70px;
   height: 26px;
-  border: none;
+  border: 1px solid transparent;
   background-color: transparent;
   color: var(--section-title-color);
   justify-self: center;
@@ -187,7 +187,7 @@
 
 .section__unique {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin-block-start: 3.4em;
   margin-block-end: 4.3em;
   gap: calc(var(--main-padding) + 0.07em);
@@ -416,7 +416,7 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 475px) {
   .header {
     padding: calc(var(--main-padding) - 5px);
     margin-block-end: 2.1em;

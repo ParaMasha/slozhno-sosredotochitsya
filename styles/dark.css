@@ -24,6 +24,7 @@
   --main-title-size: 9.813em;
   --objects-display: block;
   --button-border-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
 }
 
 .page {
